@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Blackhole basic example">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Blackhole basic example</title>
+		<link href="https://fonts.googleapis.com/css?family=BioRhyme" rel="stylesheet">
+        <style>
+        	body {
+				font-family: 'BioRhyme', serif;
+        		font-weight: 200;
+        	}
+        </style>
+    </head>
+    <body>
+        <h1>Blackhole</h1>
+        <h5>Easy to use basic example</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis blanditiis tenetur, quia molestiae fugit minima labore corporis assumenda fugiat enim!</p>
+        <button id="wipe">Wipe universe</button>
+    
+        <!-- preload image so we can wipe everything faster! -->
+        <img style="display: none;" src="http://www.syfy.com/sites/syfy/files/wire/legacy/BH_wip_v14.jpg" alt="">
+        
+        <script src="../blackhole.js"></script>
+        <script>
+            document.querySelector('#wipe').addEventListener('click', function() {
+                var blackhole = new Blackhole();
+                blackhole.form();
+            });
+        </script>
+    </body>
+</html>
